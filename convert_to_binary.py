@@ -4,6 +4,8 @@ import numpy as np
 img = cv2.imread('images/lena.jpg')
 
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img = cv2.resize(img, (256, 256))
+
 
 size = (img.shape)
 
